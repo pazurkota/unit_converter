@@ -1,11 +1,24 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    max-width: 550px;
+    max-width: 450px;
 }
 
-h2 {
+h2, h4 {
     margin: 0;
+}
+
+h4 {
+    color: #ccc1ff;
+    font-weight: 500;
+}
+
+p {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+
+    margin-bottom: 0;
 }
 
 .container {
@@ -13,14 +26,26 @@ h2 {
     flex-direction: column;
 
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
+}
+
+.info-box {
+    background-color: #273549;
+    margin: 20px;
+
+    border-radius: 5px;
+    padding: 15px;
 }
 
 #header {
     background-color: #6943ff;
     color: white;
     padding: 20px;
+}
+
+#content {
+    background-color: #1f2937;
 }
 
 #number-input {
