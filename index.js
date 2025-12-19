@@ -6,7 +6,7 @@ const volumeEl = document.getElementById("volume-el")
 const massEl = document.getElementById("mass-el")
 
 converterButton.addEventListener("click", function () {
-    console.log("button clicked!")
+    printConvertedUnits(converterInput.value)
 })
 
 function lengthConvert(number) {
@@ -28,5 +28,9 @@ function massConvert(number) {
     let poundsToKilograms = number * 0.45359237
 
     return [kilogramsToPounds.toFixed(3), poundsToKilograms.toFixed(3)]
+}
+
+function printConvertedUnits(number) {
+    lengthEl.textContent = `${number} meters = ${lengthConvert(number)[0]} feet | ${number} feet = ${lengthConvert(number)[1]} meters`
 }
 
