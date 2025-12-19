@@ -32,5 +32,7 @@ function massConvert(number) {
 
 function printConvertedUnits(number) {
     lengthEl.textContent = `${number} meters = ${lengthConvert(number)[0]} feet | ${number} feet = ${lengthConvert(number)[1]} meters`
+    volumeEl.textContent = `${number} liters = ${volumeConvert(number)[0]} gallons | ${number} gallons = ${volumeConvert(number)[1]} liters`
+    massEl.textContent = `${number} kilos = ${massConvert(number)[0]} pounds | ${number} pounds = ${massConvert(number)[1]} kilos`
 }
 
